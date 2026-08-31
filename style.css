@@ -1,0 +1,420 @@
+/*  RESERT */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080909;
+    color: #f5f1eb;
+    font-family: "Bodoni Moda", serif;
+}
+
+/* HEADER */
+
+.header{
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 5%;
+
+    background-color: #080909;
+
+    border-bottom: 1px solid #302522;
+
+    position: relative;
+    z-index: 10;
+}
+/* LOGO */
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    color: white;
+    text-decoration: none;
+
+    min-width: 280px;
+}
+.logo img{
+    width: 42px;
+    height: auto;
+}
+.logo-text{
+    text-align: center;
+
+    line-height: 0.9;
+}
+.logo-principal{
+    display: block;
+
+    font-family: "Bodoni Moda", serif;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+.logo-secundario{
+    display: block;
+
+    font-family: "Bodoni Moda", serif;
+
+    font-size: 16px;
+
+    margin-top: 5px;
+}
+.logo-text::after{
+    content: "✥";
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #8b1e1e;
+
+    font-size: 12px;
+}
+
+/* MENU  */
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    flex: none;
+     flex: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu a{
+    color: #f0ece7;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+.menu a:hover{
+    color: #a52a2a;
+}
+/* AÇÕES */
+
+.acoes{
+    min-width: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.icone{
+    background: none;
+    border: none;
+    color: #f0ece7;
+    font-size: 25px;
+    cursor: pointer;
+}
+.divisor{
+    width: 1px;
+    height: 22px;
+    background-color: #403936;
+}
+/* HERO */
+.hero{
+    min-height: 680px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ESCURECIMENTO DA IMAGEM */
+
+.overlay{
+    position: absolute;
+
+    inset: 0;
+
+    background: 
+         linear-gradient(
+            90deg,
+            rgba(5,7,7,0.95) 0%,
+            rgba(5,7,7,0.72) 38%,
+            rgba(5,7,7,0.15) 75%,
+            rgba(5,7,7,0.35) 100%
+         );
+
+        z-index: 1; 
+}
+
+/* CONTEUDO DO HERO */
+
+.hero-conteudo{
+    width: 50%;
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+/* TÍTULO */
+
+.hero-conteudo h1{
+    line-height: 0.85;
+}
+.titulo-principal{
+
+    display: block;
+    font-family: "Bodoni Moda", serif;
+
+    font-size: clamp(70px, 7vw, 115px);
+
+    font-weight: 400;
+
+    letter-spacing: 3px;
+}
+.titulo-secundario{
+    display: block;
+
+    font-family: "Bodoni Moda",serif;
+
+    font-size: 45px;
+
+    margin-top: 5px;
+}
+.titulo-secundario strong{
+    font-family: "Great Vibes", cursive;
+
+    color: #8b1e1e;
+
+    font-size: 2.6em;
+    font-weight: 400;
+}
+/* ORNAMENTO */
+
+.ornamento{
+    width: 330px;
+
+    height: 1px;
+
+    background-color: #6b4035;
+
+    margin: 30px 0 30px;
+
+    position: relative;
+}
+.ornamento::after{
+    content: "✥" ;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: #8b1e1e;
+
+    background-color: #080909;
+
+    padding: 0 10px;
+
+    font-size: 18px;
+}
+
+/* TEXTO */
+
+.hero-conteudo p{
+    font-family: "Bodoni Moda", serif;
+
+    font-size: 15px;
+
+    letter-spacing: 3px;
+
+    line-height: 2.2;
+
+    color: #e8e1da;
+}
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    margin-top: 30px;
+    
+    padding: 17px 60px;
+
+    border: 1px solid #8b1e1e;
+
+    color: #b83a3a;
+
+    text-decoration: none;
+
+    font-family: "Bodoni Moda", serif;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    transition: 0.3;
+}
+
+.botao:hover{
+    background-color: #8b1e1e;
+
+    color: white;
+}
+/* GÊNEROS */ 
+    
+.generos {
+    min-height: 190px;
+
+    background-color: #080909;
+
+    padding: 28px 5% 35px;
+
+    border-top: 1px solid #302522;
+
+    
+}
+.generos a:hover{
+    background-color: #8b1e1e;
+}
+    
+/* TÍTULO DOS GÊNEROS */
+
+.titulo-generos{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+.titulo-generos span{
+    width: 80px;
+
+    height: 1px;
+
+    background-color: #6b4035;
+}
+.titulo-generos h2 {
+    font-family: "Bodoni Moda", serif;
+
+    font-size: 20px;
+
+    font-width: 400;
+
+    letter-spacing: 5px;
+}
+
+/*LISTA DE GÊNEROS */
+
+.lista-generos{
+    display: flex;
+
+    align-items: stretch;
+
+    justify-content: center;
+}
+.lista-generos a{
+    width: 150px;
+
+    min-height: 85px;
+
+    display: flex;
+
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #f5f1eb;
+
+    text-decoration: none;
+
+    border-right: 1px solid #302522;
+
+    transition: 0.3s;
+}
+.lista-generos a:last-child{
+    border-right: none;
+}
+.generos-icone{
+    font-size: 30px;
+
+    color: #8d6b55;
+
+    line-height: 1;
+}
+.lista-generos a span:last-child{
+    font-family: "Bodoni Moda", serif;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.lista-generos a:hover .generos-icone{
+    color: #9b2525;
+}
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px){
+
+    .header{
+        padding: 0 3%;
+    }
+    .logo{
+        min-width: 220px
+    }
+    .menu{
+        gap: 20px;
+    }
+    .menu a{
+        font-size: 14px;
+    }
+    .acoes{
+        min-width: 100px;
+    }
+    .hero-conteudo{
+        width: 55%;
+        padding-left: 4%;
+    }
+    .titulo-principal{
+        font-size: 70px;
+    }
+    .titulo-secundario{
+        font-size: 35px;
+    }
+}
